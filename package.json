@@ -1,0 +1,25 @@
+{
+  "name": "@davidfrancisco/typeface-karmilla",
+  "version": "0.0.1",
+  "description": "Karmilla typeface",
+  "main": "index.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmfrancisco/typeface-karmilla.git"
+  },
+  "keywords": [
+    "typeface",
+    "font",
+    "font",
+    "family",
+    "google",
+    "fonts",
+    "karmilla"
+  ],
+  "author": "David Francisco <hello@dmfranc.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmfrancisco/typeface-karmilla/issues"
+  },
+  "homepage": "https://github.com/dmfrancisco/typeface-karmilla#readme"
+}
