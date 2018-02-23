@@ -69,7 +69,7 @@ These files follow the same structure defined by the [Google Webfonts Helper](ht
 app when the "Best Support" option is activated. Keep in mind that while these files include multiple formats,
 the browser will only download the ones needed.
 
-## Additional details
+## Additional instructions
 
 ### Why are some files named Karmilla and others Karla?
 
@@ -102,6 +102,28 @@ import "typeface-karmilla/bold-italic.css";
 ```
 
 These files are half the size of Karmilla, but around 1.6x bigger than Karla.
+
+### I want the cedilla while still using Google Fonts or the `typeface-karla` package
+
+Google Fonts allows users to import specific glyphs from a font by specifying a `text` parameter.
+For example, you could import the "ç" and "Ç" letters from Arimo, and then use it with Karla,
+using the `typeface-karla` package, or also from Google Fonts with the following CSS:
+
+```css
+@import url(https://fonts.googleapis.com/css?family=Arimo&text=çÇ);
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
+body {
+  font-family: 'Arimo', 'Karla', sans-serif;
+}
+```
+
+Because we only important the two letters from Arimo, the rest of the alphabet will fallback to Karla.
+The **big caveat** with this approach is that your visitors may have Arimo installed on their machines,
+which will cause the browser to use it instead, and so all your text will be rendered with Arimo.
+
+A better solution would be to still host the fonts yourself by downloading them from the
+the [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com) and removing `local('Arimo')` from the `src` properties.
 
 ### Other languages
 
