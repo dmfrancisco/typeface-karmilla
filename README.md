@@ -19,13 +19,13 @@ and [Gatsby](https://github.com/gatsbyjs/gatsby) will work without any changes t
 Simply install this package with:
 
 ```
-npm install --save @davidfrancisco/typeface-karmilla
+npm install github:dmfrancisco/typeface-karmilla
 ```
 
 Then in your entry file:
 
 ```js
-import "@davidfrancisco/typeface-karmilla";
+import "typeface-karmilla";
 ```
 
 Finally, in your CSS file you can use it like this:
@@ -47,10 +47,10 @@ In that case, you may prefer to let the browser create the italic style instead 
 You can import specific styles like this:
 
 ```js
-import "@davidfrancisco/typeface-karmilla/regular.css";
-import "@davidfrancisco/typeface-karmilla/bold.css";
-import "@davidfrancisco/typeface-karmilla/italic.css";
-import "@davidfrancisco/typeface-karmilla/bold-italic.css";
+import "typeface-karmilla/regular.css";
+import "typeface-karmilla/bold.css";
+import "typeface-karmilla/italic.css";
+import "typeface-karmilla/bold-italic.css";
 ```
 
 ## Supporting old browsers
@@ -59,10 +59,10 @@ If you still need to support old browsers (marked as red in [this list](https://
 you can import the following files instead:
 
 ```js
-import "@davidfrancisco/typeface-karmilla/regular-best.css";
-import "@davidfrancisco/typeface-karmilla/bold-best.css";
-import "@davidfrancisco/typeface-karmilla/italic-best.css";
-import "@davidfrancisco/typeface-karmilla/bold-italic-best.css";
+import "typeface-karmilla/regular-best.css";
+import "typeface-karmilla/bold-best.css";
+import "typeface-karmilla/italic-best.css";
+import "typeface-karmilla/bold-italic-best.css";
 ```
 
 These files follow the same structure defined by the [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com)
@@ -95,10 +95,10 @@ with a custom subsetting (Western Languages).
 You can use it by importing the following files:
 
 ```js
-import "@davidfrancisco/typeface-karmilla/regular-subset.css";
-import "@davidfrancisco/typeface-karmilla/bold-subset.css";
-import "@davidfrancisco/typeface-karmilla/italic.css";
-import "@davidfrancisco/typeface-karmilla/bold-italic.css";
+import "typeface-karmilla/regular-subset.css";
+import "typeface-karmilla/bold-subset.css";
+import "typeface-karmilla/italic.css";
+import "typeface-karmilla/bold-italic.css";
 ```
 
 These files are half the size of Karmilla, but around 1.6x bigger than Karla.
