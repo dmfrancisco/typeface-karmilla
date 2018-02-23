@@ -74,7 +74,7 @@ the browser will only download the ones needed.
 ### Why are some files named Karmilla and others Karla?
 
 Karmilla [doesn't offer italic styles](https://github.com/ms-studio/karmilla/issues/15) at the moment.
-As a fallback, the Karla files are used instead. The browser will apply faux-italics if any of the glyphs aren't available.
+As a fallback, the Karla files are used instead, which you can opt out from. This means "ç" for example won't be displayed correctly in this style.
 
 ### I only need the extra cedilla
 
