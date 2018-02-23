@@ -2,10 +2,10 @@
   font-family: 'Karmilla';
   font-style: normal;
   font-weight: 700;
-  src: url('./fonts/karmilla-regular-016-webfont.eot'); /* IE9 Compat Modes */
-  src: url('./fonts/karmilla-regular-016-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./fonts/karmilla-regular-016-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./fonts/karmilla-regular-016-webfont.woff') format('woff'), /* Modern Browsers */
-       url('./fonts/karmilla-regular-016-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./fonts/karmilla-regular-016-webfont.svg#Karmilla') format('svg'); /* Legacy iOS */
+  src: url('./fonts/karmilla-bold-016-webfont.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/karmilla-bold-016-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/karmilla-bold-016-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/karmilla-bold-016-webfont.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/karmilla-bold-016-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/karmilla-bold-016-webfont.svg#Karmilla') format('svg'); /* Legacy iOS */
 }
