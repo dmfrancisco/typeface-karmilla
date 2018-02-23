@@ -36,15 +36,15 @@ body {
 }
 ```
 
-## Importing specific font styles
+## Importing specific font styles or weights
 
 Browsers usually only download the font files that are necessary.
 This means if your page does not use bold or italics for example, those font files won't be downloaded.
-However, in some situations you may want to use one of these styles but don't want to trigger an additional download.
+However, in some situations you may want to use one of these styles or weights but don't want to trigger an additional download.
 
 Imagine that in your entire page you only have a couple italicized words.
 In that case, you may prefer to let the browser create the italic style instead (referred to as faux-italics and faux-bold).
-You can import specific styles like this:
+You can import specific styles and weights like this:
 
 ```js
 import "typeface-karmilla/regular.css";
@@ -78,7 +78,7 @@ As a fallback, the Karla files are used instead, which you can opt out from. Thi
 
 ### I only need the extra cedilla
 
-[According to Font Squirrel](https://fontsquirrel.com/fonts/karla), the original Karla fonts supports the following languages:
+[According to Font Squirrel](https://fontsquirrel.com/fonts/karla), the original Karla fonts support the following languages:
 
 > Alsatian, Arapaho, Arrernte, Aymara, Bislama, Breton, Cebuano, Chamorro, Corsican, English, Fijian, French Creole (Saint Lucia), Frisian, Galician, Gilbertese (Kiribati), Haitian Creole, Hiligaynon, Hmong, Hopi, Ibanag, Iloko (Ilokano), Indonesian, Interglossa (Glosa), Interlingua, Irish (Gaelic), Italian, Lojban, Lombard, Luxembourgian, Malagasy, Mohawk, Norfolk/Pitcairnese, Oromo, Pangasinan, Papiamento, Piedmontese, Potawatomi, Rhaeto-Romance, Romansh (Rumantsch), Rotokas, Scots (Gaelic), Seychellois Creole (Seselwa), Shona, Somali, Southern Ndebele, Swahili, Swati/Swazi, Tagalog (Filipino/Pilipino), Tetum (Tetun), Tok Pisin, Uyghur (Latinized), Volapük, Warlpiri, Xhosa, Yapese and Zulu.
 
@@ -105,7 +105,7 @@ These files are half the size of Karmilla, but around 1.6x bigger than Karla.
 
 ### I want the cedilla while still using Google Fonts or the `typeface-karla` package
 
-Google Fonts allows users to import specific glyphs from a font by specifying a `text` parameter.
+This is not recommended, but Google Fonts allows users to import specific glyphs from a font by specifying a `text` parameter.
 For example, you could import the "ç" and "Ç" letters from Arimo, and then use it with Karla,
 using the `typeface-karla` package, or also from Google Fonts with the following CSS:
 
@@ -118,16 +118,16 @@ body {
 }
 ```
 
-Because we only important the two letters from Arimo, the rest of the alphabet will fallback to Karla.
+Because we only import the two letters from Arimo, the rest of the alphabet will fallback to Karla.
 The **big caveat** with this approach is that your visitors may have Arimo installed on their machines,
 which will cause the browser to use it instead, and so all your text will be rendered with Arimo.
 
-A better solution would be to still host the fonts yourself by downloading them from the
-the [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com) and removing `local('Arimo')` from the `src` properties.
+A workaround would be to still host the fonts yourself by downloading them from the
+[Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com) and removing `local('Arimo')` from the `src` properties.
 
 ### Other languages
 
-Google Fonts also offers a Tamil script part of the familly with inclined and upright styles in two weights, Regular and Bold.
+Google Fonts also offers a Tamil script part of the family with inclined and upright styles in two weights, regular and bold.
 These are part of the early access program.
 
 ```css
