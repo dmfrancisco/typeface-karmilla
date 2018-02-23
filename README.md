@@ -13,7 +13,7 @@ The fork has been renamed to Karmilla to respect the OFL license requirement
 
 This setup is similar to the one used in the [typefaces](https://github.com/KyleAMathews/typefaces) project.
 It assumes you are using webpack with loaders for CSS and font files.
-May tools such as [Create React App](https://github.com/facebookincubator/create-react-app)
+Many tools such as [Create React App](https://github.com/facebookincubator/create-react-app)
 and [Gatsby](https://github.com/gatsbyjs/gatsby) will work without any changes to your configuration.
 
 Simply install this package with:
@@ -28,6 +28,8 @@ Then in your entry file:
 import "@davidfrancisco/typeface-karmilla";
 ```
 
+Finally, in your CSS file you can use it like this:
+
 ```css
 body {
   font-family: 'Karmilla', sans-serif;
@@ -40,9 +42,8 @@ Browsers usually only download the font files that are necessary.
 This means if your page does not use bold or italics for example, those font files won't be downloaded.
 However, in some situations you may want to use one of these styles but don't want to trigger an additional download.
 
-Imagine that in your entire page, you only have a couple italicized words.
-In that case, you may prefer to let the browser create the italic style instead (refered to as faux-italics and faux-bold).
-
+Imagine that in your entire page you only have a couple italicized words.
+In that case, you may prefer to let the browser create the italic style instead (referred to as faux-italics and faux-bold).
 You can import specific styles like this:
 
 ```js
@@ -54,7 +55,7 @@ import "@davidfrancisco/typeface-karmilla/bold-italic.css";
 
 ## Supporting old browsers
 
-If you still need to support old browsers marked as red in [this list](https://caniuse.com/?browserset=since%202001#feat=woff)
+If you still need to support old browsers (marked as red in [this list](https://caniuse.com/?browserset=since%202001#feat=woff))
 you can import the following files instead:
 
 ```js
@@ -65,8 +66,8 @@ import "@davidfrancisco/typeface-karmilla/bold-italic-best.css";
 ```
 
 These files follow the same structure defined by the [Google Webfonts Helper](https://google-webfonts-helper.herokuapp.com)
-when the "Best Support" option is activated. Keep in mind that will these files include multiple formats,
-your visitor's browser will only download the ones needed.
+app when the "Best Support" option is activated. Keep in mind that while these files include multiple formats,
+the browser will only download the ones needed.
 
 ## Additional details
 
@@ -75,20 +76,19 @@ your visitor's browser will only download the ones needed.
 Karmilla [doesn't offer italic styles](https://github.com/ms-studio/karmilla/issues/15) at the moment.
 As a fallback, the Karla files are used instead. The browser will apply faux-italics if any of the glyphs aren't available.
 
-### I only need the the extra cedilla
+### I only need the extra cedilla
 
-[According to Font Squirrel](https://fontsquirrel.com/fonts/karla), the original Karla font supports the following languages:
+[According to Font Squirrel](https://fontsquirrel.com/fonts/karla), the original Karla fonts supports the following languages:
 
 > Alsatian, Arapaho, Arrernte, Aymara, Bislama, Breton, Cebuano, Chamorro, Corsican, English, Fijian, French Creole (Saint Lucia), Frisian, Galician, Gilbertese (Kiribati), Haitian Creole, Hiligaynon, Hmong, Hopi, Ibanag, Iloko (Ilokano), Indonesian, Interglossa (Glosa), Interlingua, Irish (Gaelic), Italian, Lojban, Lombard, Luxembourgian, Malagasy, Mohawk, Norfolk/Pitcairnese, Oromo, Pangasinan, Papiamento, Piedmontese, Potawatomi, Rhaeto-Romance, Romansh (Rumantsch), Rotokas, Scots (Gaelic), Seychellois Creole (Seselwa), Shona, Somali, Southern Ndebele, Swahili, Swati/Swazi, Tagalog (Filipino/Pilipino), Tetum (Tetun), Tok Pisin, Uyghur (Latinized), Volapük, Warlpiri, Xhosa, Yapese and Zulu.
 
-You can check the changes that were done to Karmilla in the [official repository](https://github.com/ms-studio/karmilla#changes).
+You can check the changes that were done for Karmilla in the [official repository](https://github.com/ms-studio/karmilla#changes).
+This package also includes a subset of Karmilla that should contain all glyphs necessary for the additional following languages:
 
-This package also includes a subset of Karmilla that should include all glyphs necessary for the additional following languages:
-
-> Spanish, Portuguese, French, German and Dutch.
+> Portuguese, Spanish, French, German and Dutch.
 
 These files were created by applying the same
-[FontSquirrel Webfont Generator Expert settings](https://github.com/ms-studio/karmilla/blob/master/webfontkit/karmilla-016/generator_config.txt)
+[FontSquirrel Webfont Generator settings](https://github.com/ms-studio/karmilla/blob/master/webfontkit/karmilla-016/generator_config.txt)
 that are specified in the Karmilla repository to the [TTF files](https://github.com/ms-studio/karmilla/tree/master/ttf)
 with a custom subsetting (Western Languages).
 
@@ -122,5 +122,6 @@ body {
 
 ## Credits
 
-All credits go to the original authors.
-Read more about Karmilla here: https://github.com/ms-studio/karmilla
+All credits go to the original authors.  
+Read more about Karmilla here: https://github.com/ms-studio/karmilla  
+Read more about typefaces here: https://github.com/KyleAMathews/typefaces
